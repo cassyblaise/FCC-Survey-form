@@ -9,7 +9,7 @@
 <P id="form-distriction">Let us know how can improve freecodecamp</p>
   <form>
 <div class="rowTab">
-  <div class="label">
+  <div class="labels">
 <label for="name" id="name-label">* Name:</label>
 </div>
 <div class="rightTab">
@@ -17,7 +17,7 @@
 </div>
 </div>
 <div class="rowTab">
-    <div class="label">
+    <div class="labels">
      <label for="email" id="email-label">* Email: </label>
    </div>
     <div class="rightTab">
@@ -25,7 +25,7 @@
     </div>
 </div>
   <div class="rowTab">
-    <div class="label">
+    <div class="labels">
       <label for="age" age-label>* Age:</label>
     </div>
      <div class="rightTab">
@@ -33,7 +33,7 @@
      </div>
   </div>
     <div class="rowTab">
-      <div class="label">
+      <div class="labels">
         <label for="currentposition">which option best describe your current role?</label>
       </div>
       <div class="rightTab">
@@ -47,6 +47,61 @@
         </select>
       </div>
     </div>
+   <div class="rowTab">
+     <div class="labels">
+       <label for="userRating">* How likely is that you would recommend freecodecamp to a friend?</label>
+     </div>
+     <div class="rightTab">
+       <ul class="list-style">
+         <li class="radio"><label>Definitely<input type="radio" name="radio-button" class="userRating" value="1"></label></li>
+         <li><label>Maybe<input type="radio" name="radio-button" class="userRating" value="2"></label></li>
+         <li><label>Not Sure <input type="radio" name="radio-button" class="userRating" value="3"></label></li>
+       </ul>
+     </div>
+   </div>
+   <div class="rowTab">
+     <div class="labels">
+       <label for="most-like">What do you like most about freecodecamp:</label>
+     </div>
+     <div class="rightTab">
+       <select id="most-like" name="mostlike" class="dropdown">
+              <option disabled value> select an option</option>
+                <option value="Challenges">Challenges</option>
+                  <option value="projects">projects</option>
+                    <option value="community">community</option>
+                      <option value="open source">Open source</option>
+       </select>
+     </div>
+   </div>
+   <div class="rowTab">
+     <div class="labels">
+       <label for="preferences">Things that should be improve in the future(check all apply):</label>
+     </div>
+     <div class="rightTab">
+       <ul id="preferences" style="list-style: none;">
+         <li class="checkbox"><label><input type="checkbox" name="prefer" class="userRating" value="1">front-end projects</label></li>
+         <li class="checkbox"><label> <input type="checkbox" name="prefer" class="userRating" value="2">Back-end projects</label></li>
+          <li class="checkbox"><label> <input type="checkbox" name="prefer" class="userRating" value="3">Data visualization</label></li>
+           <li class="checkbox"><label> <input type="checkbox" name="prefer" class="userRating" value="4">Challenges</label></li>
+           <li class="checkbox"><label> <input type="checkbox" name="prefer" class="userRating" value="5">video</label></li>
+           <li class="checkbox"><label> <input type="checkbox" name="prefer" class="userRating" value="6">City Meetups</label></li>
+           <li class="checkbox"><label> <input type="checkbox" name="prefer" class="userRating" value="7">forum</label></li>
+           <li class="checkbox"><label> <input type="checkbox" name="prefer" class="userRating" value="8">Open source</label></li>
+           <li class="checkbox"><label> <input type="checkbox" name="prefer" class="userRating" value="9">Gitter help room</label></li>
+           <li class="checkbox"><label> <input type="checkbox" name="prefer" class="userRating" value="10">wiki</label></li>
+           <li class="checkbox"><label> <input type="checkbox" name="prefer" class="userRating" value="2">Additional courses</label></li>
+       </ul>
+     </div>
+   </div>
+    <div class="rowTab">
+      <div class="label">
+        <label for="comments">Any comments or Suggestions?</label>
+      </div>
+      <div class="rightTab">
+        <textarea name="comments" id="comments" class="input-field" placeholder="Enter Your comments here...." rows="8" cols="80"></textarea>
+      </div>
+    </div>
+    <button id="submit" type="submit">Submit</button>
     </form>
 </div>
 </body>
