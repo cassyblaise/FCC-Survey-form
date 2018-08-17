@@ -1,9 +1,53 @@
 <!DOCTYPE html>
 <html>
-<body>
-  <head>
-<title>survey form</title>
-</head>
-<h1>this my formapp</h1>
+      <head>
+      <title>survey form</title>
+     </head>
+    <body>
+<h1>Survey Form</h1>
+<div id="form-head">
+<P id="form-distriction">Let us know how can improve freecodecamp</p>
+  <form>
+<div class="rowTab">
+  <div class="label">
+<label for="name" id="name-label">* Name:</label>
+</div>
+<div class="rightTab">
+  <input autofocus type="type" name="name" class="input-field" placeholder="Enter Your Name" required>
+</div>
+</div>
+<div class="rowTab">
+    <div class="label">
+     <label for="email" id="email-label">* Email: </label>
+   </div>
+    <div class="rightTab">
+<input type="email" name="email" id="email"  class="input-field" placeholder="Enter Your Email" required>
+    </div>
+</div>
+  <div class="rowTab">
+    <div class="label">
+      <label for="age" age-label>* Age:</label>
+    </div>
+     <div class="rightTab">
+    <input type="number" name="age" id="number" min="1" max="200" class="input-field" placeholder="Enter Your Age" required>
+     </div>
+  </div>
+    <div class="rowTab">
+      <div class="label">
+        <label for="currentposition">which option best describe your current role?</label>
+      </div>
+      <div class="rightTab">
+        <select class="dropdown" name="currentposition" id="dropdown">
+          <option disabled value>select an option</option>
+          <option value="Students">Students</option>
+            <option value="Job">Full Time Job</option>
+              <option value="learner">Full Time learner</option>
+                <option value="preferNo">Prefer Not To Say</option>
+                  <option value="other">Other</option>
+        </select>
+      </div>
+    </div>
+    </form>
+</div>
 </body>
 </html>
